@@ -1,0 +1,2 @@
+account="dsg"
+print("\033[31;1mAccount[%s]doesnotexist!\033[0m" % account)

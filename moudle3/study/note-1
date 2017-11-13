@@ -1,0 +1,52 @@
+# 面向对象
+## 2017.10.19
+
+### subprocess
+#### os
+> * os.system 输出命令到屏幕，返回命令执行状态（0表示成功）
+* os.popen("dir").read 会保存命令的执行结果输出
+
+#### py 2.7 commonds(win 不可用)
+* commands.getstatusoutput("dir")
+
+#### subprocess
+> * subprocess.run(["df","-h"],returncode=1)
+* **subprocess.run(["df -h | grep dev"],
+shelll=True)#shell=True表示python不解析命令**
+
+> * subprocess.getstatusoutput("ls /bin/ls")
+* subprocess.getoutput("ls /bin/ls")
+
+##### subprocess.popen()
+> * subprocess.popen("ifconfig | grep 192",shell=True)
+* res = subprocess.popen("ifconfig | grep 192",
+shell=True,stdout=subprocess.PIPE)
+* res.stdout.read()
+* res.stderr.read() 出错时打印错误
+* res.poll()
+* res.wait()
+* res.terminate()中断
+
+### 面向对象简介
+
+#### 类
+##### 方法
+##### 属性
+###### 共有属性
+>
+
+###### 私有属性
+> __private_attr_name = value
+def get_heart(self):#对外部只提供制度访问接口
+    return self.__heart
+r1._Role__heart强制访问私有属性
+
+### 类的起源
+#### 类其实也是个对象，类也是type实例化产生的
+####
+
+
+
+
+
+

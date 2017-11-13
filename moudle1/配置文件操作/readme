@@ -1,0 +1,42 @@
+#作业名称：配置文件的增删改查
+
+#作者：Marvin
+
+#博客地址：http://www.cnblogs.com/Macal/p/7489561.html
+
+#作业需求：
+配置文件增删改查
+
+#本次完成作业需求：
+配置文件增删改查
+
+#测试：
+
+##运行环境：python3.4
+第一步：
+    运行程序
+第二步：
+    选择1，进行查询
+第三步：
+    输入查询内容
+    {'backend':'www.oldboy.org','record':{'server':'100.1.7.10','weight':'20','maxconn':'3000'}}
+第四步：
+    选择2，进行添加
+第五步：
+    输入添加内容
+    {'backend':'www.oldboy.org','record':{'server':'100.1.7.1','weight':'20','maxconn':'3000'}}
+第六步：
+    选择3，进行删除
+第七步：
+    输入删除内容
+    {'backend':'www.oldboy.org','record':{'server':'100.1.7.1','weight':'20','maxconn':'3000'}}
+第八步：
+    选择4，进行修改
+第九步：
+    输入要修改的新数据和修改后的新数据
+    [{'backend':'www.oldboy.org','record':{'server':'100.1.7.10','weight':'20','maxconn':'3000'}},{'backend':'www.oldboy.org','record':{'server':'100.1.7.1','weight':'20','maxconn':'3000'}}]
+第十步：
+    选择5，进行退出
+
+#备注：
+1、输入的格式固定

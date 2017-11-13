@@ -1,0 +1,97 @@
+1、定义：
+模块：用来从逻辑上组织python代码（变量，函数，类，逻辑：实现一个功能），本质上就是一个.py文件
+包：用来从逻辑上组织模块的，本质就是一个文件夹/目录（必须带有一个__init__.py文件）
+
+
+2、导入方法：
+import moudle_name
+import moudle_name1,moudle_name2
+from moudule_name import *
+from moudule_name import f,f1,f3
+
+from moudule_name import function as func
+
+3、import本质（路径搜索和搜索路径）
+导入模块的本质就是把python文件解释一遍
+导入包的本质就是执行该包下的__init__.py文件
+
+
+4、导入优化
+
+5、模块分类：
+a：标准库
+b：开源模块/第三方模块
+
+标准库：
+1、time   datatime
+
+time
+
+时间戳：sec
+
+struct_time(tuple）
+
+格式化的时间字符串
+
+time.time()
+time.sleep(2)
+time.gmtime()#结果为UTC时区
+time.localtime()#结果为UTC+8时区
+time.mktime()#struct_time(tuple）转化为时间戳
+time.strftime("%Y-%m-%d %H-%M-%S",x)
+#strptime("格式化字符串"，"格式")---->struct_time
+time.strptime("2017-9-10 17-34-23","%Y-%m-%d %H-%M-%S")
+time.asctime()#将时间元组转为字符串
+time.ctime()#将时间戳sec转为字符串
+
+
+datatime
+datatime.datatime.now()
+datatime.datatime.now()+data.timedelta(3)#当前时间+3天
+datatime.datatime.now()+data.timedelta(-3)#当前时间-3天
+datatime.datatime.now()+data.timedelta(hours=3)#当前时间+3小时
+
+
+
+
+
+random模块
+random.random()#范围[0,1)
+random.randint(1,3)
+random.randrange(1,3)
+random.choice("hello")
+random.choice([1,3,4])
+random.sample("hello",2)
+random.uniform(1,3)
+random.shuffle()#洗牌功能
+l=[1,2,3,4,4,5,6]
+random.shuffle(l)
+
+
+OS模块
+
+os.getcwd()#显示当前路径
+os.chadir("c\\user")#切换目录
+os.chadir(r"c\user")#切换目录
+os.curdir#显示当前目录
+os.pardir#显示上一级目录
+os.makedirs(r"a\b\c\d")#递归新建目录
+os.removedirs(r"a\b\c\d")#文件夹下无文件时，会递归删除   清理空文件夹
+os.mkdir(r"a\b\c\d")#不支持递归新建文件夹
+os.rmkdir(r"a\b\c\d")#不支持递归删除
+os.listdir(".")
+os.rename("oldname","newname")
+os.stst(r"hehe")#文件夹信息
+os.sep
+os.linesep
+os.environ
+os.system()
+os.path.split(r"C\b\h\a.txt")
+os.path.dirname()
+os.path.basename()
+os.path.exists(r"c:\a")
+os.path.isabs(r"c:\a")
+os.path.isfile(r"c:\a\a.txt ")
+
+
+

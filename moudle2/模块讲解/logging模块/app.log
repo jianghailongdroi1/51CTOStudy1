@@ -1,0 +1,6 @@
+
+09/19/2017 02:06:32 PM INFO test info
+09/19/2017 02:06:32 PM DEBUG test debug
+09/19/2017 02:06:32 PM ERROR test error
+09/19/2017 02:06:32 PM WARNING test warning
+09/19/2017 02:06:32 PM CRITICAL test critical
